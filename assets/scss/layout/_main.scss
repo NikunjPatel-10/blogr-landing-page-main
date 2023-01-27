@@ -1,0 +1,128 @@
+.section-wrapper {
+    margin-top: 100px;
+
+
+    .sub-heading-text {
+        text-align: center;
+        font-size: 45px;
+        color: hsl(206deg 44% 22%);
+    }
+
+    .design-wrapper {
+        margin-left: 150px;
+        position: relative;
+
+        .left-side {
+            padding-top: 120px;
+        }
+
+        h3 {
+            font-size: 30px;
+            color: hsl(206deg 36% 21%);
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: hsl(228deg 2% 54%);
+            margin-bottom: 40px;
+            line-height: 25px;
+        }
+
+        .image-wrapper {
+            position: absolute;
+            right: 0;
+            top: 0;
+            height: 600px;
+            width: 600px;
+
+            img {
+                height: auto;
+                width: 100%;
+                overflow: hidden;
+            }
+        }
+
+    }
+
+    .mobile-design-wrapper {
+        margin-top: 100px;
+        background-color: hsl(236deg 21% 29%);
+        border-bottom-left-radius: 100px;
+        border-top-right-radius: 100px;
+        position: relative;
+        .bg-wrapper {
+            background: url(/images/bg-pattern-circles.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        .image-wrapper {
+            height: 400px;
+            width: 400px;
+            overflow: hidden;
+            position: absolute;
+            left: 6%;
+            top:-20%;
+
+            img {
+                height: auto;
+                width: 100%;
+               
+            }
+        }
+
+        .mobile-detail {
+            padding-top: 80px;
+
+            h3 {
+                font-size: 30px;
+                color: hsl(180deg 100% 100%);
+                margin-bottom: 20px;
+            }
+
+            p {
+                color: hsl(234deg 20% 80%);
+                margin-bottom: 40px;
+                line-height: 25px;
+            }
+        }
+    }
+
+   
+
+    .laptop-design-wrapper {
+        margin-top: 100px;
+
+        .image-wrapper {
+            height: 600px;
+            width: 600px;
+
+            img {
+                height: auto;
+                width: 100%;
+                overflow: hidden;
+            }
+        }
+
+        h3 {
+            font-size: 30px;
+            color: hsl(206deg 36% 21%);
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: hsl(228deg 2% 54%);
+            margin-bottom: 40px;
+            line-height: 25px;
+        }
+
+        .right-side {
+            padding-top: 120px;
+        }
+
+
+    }
+
+
+
+}
