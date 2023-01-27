@@ -1,0 +1,129 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  overflow: hidden;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.overflow-auto {
+  overflow: auto;
+}
+
+.list-style {
+  list-style: none;
+}
+
+.main-wrapper {
+  background-color: hsl(8deg, 99%, 72%);
+  border-bottom-left-radius: 100px;
+}
+
+.wrapper {
+  padding: 30px 70px;
+  background: url(/images/bg-pattern-intro-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.wrapper .header-text {
+  color: #fef8f8;
+  font-size: 40px;
+  font-weight: 400;
+  margin: 0px 30px;
+}
+.wrapper .nav-item {
+  color: hsl(5deg, 96%, 90%);
+  font-size: 16px;
+  font-weight: bold;
+  padding: 0px 15px;
+}
+.wrapper .nav-item .nav-icon {
+  padding: 0px 10px;
+}
+.wrapper .left-header .login-text {
+  color: white;
+  font-weight: 500;
+  font-size: 20px;
+}
+.wrapper .left-header button {
+  color: hsl(347deg, 66%, 60%);
+  font-size: 16px;
+  font-weight: bolder;
+  padding: 10px 35px;
+  border-radius: 30px;
+  border: none;
+  margin: 0px 15px;
+  cursor: pointer;
+}
+.wrapper .detail-wrapper {
+  margin: 100px 0px;
+}
+.wrapper .detail-wrapper h1 {
+  font-size: 60px;
+  color: white;
+  margin-bottom: 30px;
+}
+.wrapper .detail-wrapper p {
+  font-size: 25px;
+  color: hsl(12deg, 100%, 90%);
+  margin-bottom: 40px;
+}
+.wrapper .detail-wrapper .free-btn {
+  color: hsl(347deg, 66%, 60%);
+  font-size: 16px;
+  font-weight: bolder;
+  padding: 20px 35px;
+  border-radius: 30px;
+  border: none;
+  margin: 0px 15px;
+  cursor: pointer;
+}
+.wrapper .detail-wrapper .learn-btn {
+  color: white;
+  font-size: 16px;
+  font-weight: bolder;
+  padding: 20px 35px;
+  border-radius: 30px;
+  border: 2px solid white;
+  background-color: hsl(0deg, 96%, 70%);
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=style.css.map */
