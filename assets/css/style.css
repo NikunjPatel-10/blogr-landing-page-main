@@ -165,18 +165,18 @@ body {
 }
 .section-wrapper .design-wrapper .image-wrapper {
   position: absolute;
-  right: 0;
+  right: -10%;
   top: 0;
   height: 600px;
   width: 600px;
 }
 .section-wrapper .design-wrapper .image-wrapper img {
-  height: auto;
+  max-height: auto;
   width: 100%;
   overflow: hidden;
 }
 .section-wrapper .mobile-design-wrapper {
-  margin-top: 100px;
+  margin-top: 150px;
   background-color: hsl(236deg, 21%, 29%);
   border-bottom-left-radius: 100px;
   border-top-right-radius: 100px;
@@ -186,19 +186,20 @@ body {
   background: url(/images/bg-pattern-circles.svg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: 70%;
 }
 .section-wrapper .mobile-design-wrapper .image-wrapper {
   height: 400px;
   width: 400px;
-  overflow: hidden;
+  margin-left: 150px;
   position: absolute;
-  left: 6%;
-  top: -20%;
+  left: 0%;
+  top: -25%;
 }
 .section-wrapper .mobile-design-wrapper .image-wrapper img {
   height: auto;
   width: 100%;
+  margin-left: -25px;
 }
 .section-wrapper .mobile-design-wrapper .mobile-detail {
   padding-top: 80px;
@@ -214,9 +215,13 @@ body {
   line-height: 25px;
 }
 .section-wrapper .laptop-design-wrapper {
-  margin-top: 100px;
+  margin-top: 150px;
+  position: relative;
 }
 .section-wrapper .laptop-design-wrapper .image-wrapper {
+  position: absolute;
+  left: -10%;
+  top: 0;
   height: 600px;
   width: 600px;
 }
