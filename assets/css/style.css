@@ -63,9 +63,14 @@ body {
   list-style: none;
 }
 
+.d-none {
+  display: none;
+}
+
 .main-wrapper {
   background-color: hsl(8deg, 99%, 72%);
   border-bottom-left-radius: 100px;
+  position: relative;
 }
 
 .wrapper {
@@ -81,14 +86,21 @@ body {
   font-weight: 400;
   margin: 0px 30px;
 }
+.wrapper #checkbox_toggle {
+  display: none;
+}
 .wrapper .nav-item {
   color: hsl(5deg, 96%, 90%);
   font-size: 16px;
   font-weight: bold;
   padding: 0px 15px;
+  cursor: pointer;
 }
 .wrapper .nav-item .nav-icon {
   padding: 0px 10px;
+}
+.wrapper .nav-mobile {
+  display: none;
 }
 .wrapper .left-header .login-text {
   color: white;
@@ -129,16 +141,114 @@ body {
   cursor: pointer;
 }
 .wrapper .detail-wrapper .learn-btn {
-  color: white;
+  color: hsl(347deg, 66%, 60%);
   font-size: 16px;
   font-weight: bolder;
   padding: 20px 35px;
   border-radius: 30px;
   border: 2px solid white;
-  background-color: hsl(0deg, 96%, 70%);
   cursor: pointer;
+  color: white;
+  background-color: hsl(0deg, 96%, 70%);
+}
+.wrapper .detail-wrapper .learn-btn:hover {
+  color: hsl(0deg, 96%, 70%);
+  background-color: white;
 }
 
+.toggle-icon {
+  position: absolute;
+  top: 5%;
+  right: 10%;
+  display: none;
+}
+
+@media (max-width: 375px) {
+  .nav-desktop {
+    display: none;
+  }
+  .toggle-icon {
+    display: unset;
+  }
+  .wrapper .header-text {
+    color: #fef8f8;
+    font-size: 40px;
+    font-weight: 400;
+    margin: 0px 0px;
+  }
+  .wrapper .left-header {
+    display: none;
+  }
+  .wrapper #checkbox_toggle:checked + .nav-mobile {
+    position: absolute;
+    top: 14%;
+    left: 10%;
+    right: 10%;
+    display: block;
+    background-color: white;
+    padding: 20px;
+  }
+  .wrapper .nav-mobile .left-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .wrapper .nav-mobile .left-header .login-text {
+    color: black;
+    margin: 10px 0px;
+  }
+  .wrapper .nav-mobile .left-header button {
+    color: white;
+    background: linear-gradient(to right, hsl(13deg, 100%, 72%), hsl(353deg, 100%, 62%));
+    font-size: 16px;
+    font-weight: bolder;
+    padding: 10px 35px;
+    border-radius: 30px;
+    border: none;
+    margin: 0px 15px;
+    cursor: pointer;
+  }
+  .wrapper .nav-mobile .nav-item {
+    color: hsl(208deg, 49%, 24%);
+    font-size: 16px;
+    font-weight: bold;
+    margin: 20px 0px;
+    cursor: pointer;
+  }
+  .wrapper .nav-mobile .nav-item .nav-icon {
+    padding: 0px 10px;
+  }
+  .wrapper .detail-wrapper {
+    margin: 100px 0px;
+  }
+  .wrapper .detail-wrapper h1 {
+    font-size: 40px;
+    color: white;
+    margin-bottom: 30px;
+  }
+  .wrapper .detail-wrapper p {
+    font-size: 16px;
+    color: hsl(12deg, 100%, 90%);
+    margin-bottom: 20px;
+  }
+  .wrapper .detail-wrapper .btn-wrapper {
+    display: flex;
+  }
+  .wrapper .detail-wrapper .free-btn {
+    color: hsl(347deg, 66%, 60%);
+    font-size: 16px;
+    padding: 10px 25px;
+  }
+  .wrapper .detail-wrapper .learn-btn {
+    font-size: 16px;
+    padding: 10px 25px;
+  }
+  .wrapper .detail-wrapper .learn-btn:hover {
+    color: hsl(0deg, 96%, 70%);
+    background-color: white;
+  }
+}
 .section-wrapper {
   margin-top: 100px;
 }

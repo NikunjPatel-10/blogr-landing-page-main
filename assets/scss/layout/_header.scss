@@ -1,44 +1,59 @@
-.main-wrapper{
+.main-wrapper {
     background-color: hsl(8deg 99% 72%);
     border-bottom-left-radius: 100px;
+    position: relative;
 }
 
-.wrapper{
+.wrapper {
     padding: 30px 70px;
     background: url(/images/bg-pattern-intro-desktop.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    
-    .header-text{
+
+    .header-text {
         color: #fef8f8;
         font-size: 40px;
         font-weight: 400;
         margin: 0px 30px;
     }
 
-    .nav-item{
-        color:hsl(5deg 96% 90%);
+    #checkbox_toggle {
+        display: none;
+    }
+
+
+
+    
+
+    .nav-item {
+        color: hsl(5deg 96% 90%);
         font-size: 16px;
         font-weight: bold;
         padding: 0px 15px;
-       
-        .nav-icon{
-          padding: 0px 10px;
-        
+        cursor: pointer;
+
+        .nav-icon {
+            padding: 0px 10px;
+
         }
     }
-    
-    .left-header{
-        .login-text{
+
+    .nav-mobile{
+        display: none;
+    }
+
+    .left-header {
+        .login-text {
             color: white;
             font-weight: 500;
             font-size: 20px;
         }
-        button{
+
+        button {
             color: hsl(347deg 66% 60%);
             font-size: 16px;
-            font-weight:bolder;
+            font-weight: bolder;
             padding: 10px 35px;
             border-radius: 30px;
             border: none;
@@ -47,46 +62,180 @@
         }
     }
 
-    .detail-wrapper{
+    .detail-wrapper {
         margin: 100px 0px;
 
-        h1{
+        h1 {
             font-size: 60px;
             color: white;
             margin-bottom: 30px;
         }
 
-        p{
+        p {
             font-size: 25px;
-            color:  hsl(12deg 100% 90%);
+            color: hsl(12deg 100% 90%);
             margin-bottom: 40px;
         }
 
-        .free-btn{
-                color: hsl(347deg 66% 60%);
-                font-size: 16px;
-                font-weight:bolder;
-                padding: 20px 35px;
-                border-radius: 30px;
-                border: none;
-                margin: 0px 15px;
-                cursor: pointer;
+        .free-btn {
+            color: hsl(347deg 66% 60%);
+            font-size: 16px;
+            font-weight: bolder;
+            padding: 20px 35px;
+            border-radius: 30px;
+            border: none;
+            margin: 0px 15px;
+            cursor: pointer;
         }
 
-        .learn-btn{
-                color: white;
-                font-size: 16px;
-                font-weight:bolder;
-                padding: 20px 35px;
-                border-radius: 30px;
-                border: 2px solid white;
-                background-color: hsl(360deg 96% 70%);
-                cursor: pointer;
-              
+        .learn-btn {
+            color: hsl(347deg 66% 60%);
+            font-size: 16px;
+            font-weight: bolder;
+            padding: 20px 35px;
+            border-radius: 30px;
+            border: 2px solid white;
+            cursor: pointer;
+            color: white;
+            background-color: hsl(360deg 96% 70%);
         }
 
+        .learn-btn:hover {
+            color: hsl(360deg 96% 70%);
+            background-color: white;
 
+        }
+    }
+}
+
+.toggle-icon {
+    position:absolute;
+    top:5%;
+    right: 10%;
+        display: none;
     }
 
 
+@media(max-width: 375px) {
+   .nav-desktop{
+    display: none;
+   }
+   .toggle-icon{
+    display: unset;
+   }
+//    .nav-mobile{
+//     display: flex;
+//     z-index: 1000;
+//    }
+
+
+.wrapper{
+
+    .header-text {
+        color: #fef8f8;
+        font-size: 40px;
+        font-weight: 400;
+        margin: 0px 0px;
+    }
+
+
+        .left-header{
+            display: none;
+        }
+
+        #checkbox_toggle:checked + .nav-mobile{
+            position: absolute;
+            top:14%;
+            left: 10%;
+            right: 10%;
+            display: block;
+            background-color: white;
+            padding: 20px;
+            // width: 100%;
+
+        }
+
+        .nav-mobile{
+            .left-header{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                .login-text{
+                    color:black;
+                    margin: 10px 0px;
+                }
+
+                button {
+                    color: white;
+                    background: linear-gradient(to right, hsl(13, 100%, 72%),hsl(353, 100%, 62%));
+                    font-size: 16px;
+                    font-weight: bolder;
+                    padding: 10px 35px;
+                    border-radius: 30px;
+                    border: none;
+                    margin: 0px 15px;
+                    cursor: pointer;
+                }
+            }
+
+            .nav-item {
+                
+                color: hsl(208, 49%, 24%);
+                font-size: 16px;
+                font-weight: bold;
+                // padding: 0px 15px;
+                margin: 20px 0px;
+                cursor: pointer;
+                .nav-icon {
+                    padding: 0px 10px;
+        
+                }
+            }
+        }
+
+        .detail-wrapper {
+            margin: 100px 0px;
+    
+            h1 {
+                font-size: 40px;
+                color: white;
+                margin-bottom: 30px;
+            }
+    
+            p {
+                font-size: 16px;
+                color: hsl(12deg 100% 90%);
+                margin-bottom: 20px;
+            }
+
+            .btn-wrapper{
+                display: flex;
+            }
+    
+            .free-btn {
+                color: hsl(347deg 66% 60%);
+                font-size: 16px;
+                padding: 10px 25px;
+                
+            }
+    
+            .learn-btn {
+                font-size: 16px;
+                padding: 10px 25px;
+            }
+    
+            .learn-btn:hover {
+                color: hsl(360deg 96% 70%);
+                background-color: white;
+    
+            }
+        }
+
+
+}
+
+
+   
 }
