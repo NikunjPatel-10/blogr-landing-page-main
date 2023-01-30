@@ -1,0 +1,39 @@
+.footer-wrapper {
+    margin-top: 150px;
+    background-color: hsl(232deg 10% 16%);
+    padding: 50px 150px;
+    border-top-right-radius: 100px;
+
+
+    h3 {
+        color: white;
+        font-size: 40px;
+    }
+
+    .nav-wrapper {
+        margin-left: 100px
+    }
+
+    nav {
+        padding: 0px 100px;
+
+        ul {
+            list-style: none;
+            
+            li {
+                margin: 15px 0px;
+                color: hsl(0, 0%, 100%);
+                opacity: 50%;
+            }
+
+            li:first-child {
+                color: hsl(0, 0%, 100%);
+                margin-bottom: 40px;
+                opacity: 100%;
+            }
+
+        }
+
+    }
+
+}
