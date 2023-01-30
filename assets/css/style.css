@@ -8,6 +8,7 @@ html,
 body {
   height: 100%;
   width: 100%;
+  font-family: "Overpass", sans-serif;
 }
 
 body {
@@ -242,6 +243,36 @@ body {
 }
 .section-wrapper .laptop-design-wrapper .right-side {
   padding-top: 120px;
+}
+
+.footer-wrapper {
+  margin-top: 150px;
+  background-color: hsl(232deg, 10%, 16%);
+  padding: 50px 150px;
+  border-top-right-radius: 100px;
+}
+.footer-wrapper h3 {
+  color: white;
+  font-size: 40px;
+}
+.footer-wrapper .nav-wrapper {
+  margin-left: 100px;
+}
+.footer-wrapper nav {
+  padding: 0px 100px;
+}
+.footer-wrapper nav ul {
+  list-style: none;
+}
+.footer-wrapper nav ul li {
+  margin: 15px 0px;
+  color: hsl(0deg, 0%, 100%);
+  opacity: 50%;
+}
+.footer-wrapper nav ul li:first-child {
+  color: hsl(0deg, 0%, 100%);
+  margin-bottom: 40px;
+  opacity: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
