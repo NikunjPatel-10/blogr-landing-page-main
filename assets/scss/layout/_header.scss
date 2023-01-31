@@ -1,5 +1,5 @@
 .main-wrapper {
-    background-color: hsl(8deg 99% 72%);
+    background-color: $main-bg-color;
     border-bottom-left-radius: 100px;
     position: relative;
 }
@@ -12,7 +12,7 @@
     background-size: cover;
 
     .header-text {
-        color: #fef8f8;
+        color: $header-main-text-color;
         font-size: 40px;
         font-weight: 400;
         margin: 0px 30px;
@@ -24,10 +24,10 @@
 
 
 
-    
+
 
     .nav-item {
-        color: hsl(5deg 96% 90%);
+        color: $nav-item-color;
         font-size: 16px;
         font-weight: bold;
         padding: 0px 15px;
@@ -39,13 +39,13 @@
         }
     }
 
-    .nav-mobile{
+    .nav-mobile {
         display: none;
     }
 
     .left-header {
         .login-text {
-            color: white;
+            color: $white-color;
             font-weight: 500;
             font-size: 20px;
         }
@@ -109,67 +109,62 @@
 }
 
 .toggle-icon {
-    position:absolute;
-    top:5%;
+    position: absolute;
+    top: 5%;
     right: 10%;
-        display: none;
-    }
+    display: none;
+}
 
 
 @media(max-width: 375px) {
-   .nav-desktop{
-    display: none;
-   }
-   .toggle-icon{
-    display: unset;
-   }
-//    .nav-mobile{
-//     display: flex;
-//     z-index: 1000;
-//    }
-
-
-.wrapper{
-
-    .header-text {
-        color: #fef8f8;
-        font-size: 40px;
-        font-weight: 400;
-        margin: 0px 0px;
+    .nav-desktop {
+        display: none;
     }
 
+    .toggle-icon {
+        display: unset;
+    }
 
-        .left-header{
+    .main-wrapper {
+        position: relative;
+    }
+
+    .wrapper {
+        .header-text {
+            position: absolute;
+            left: 0;
+            top: 2%
+        }
+
+        .left-header {
             display: none;
         }
 
-        #checkbox_toggle:checked + .nav-mobile{
+        #checkbox_toggle:checked+.nav-mobile {
             position: absolute;
-            top:14%;
+            top: 14%;
             left: 10%;
             right: 10%;
             display: block;
-            background-color: white;
+            background-color:  $white-color;
             padding: 20px;
-            // width: 100%;
-
         }
 
-        .nav-mobile{
-            .left-header{
+        .nav-mobile {
+            .left-header {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
 
-                .login-text{
-                    color:black;
+                .login-text {
+                    color:hsl(214deg 20% 28%);
                     margin: 10px 0px;
                 }
 
                 button {
-                    color: white;
-                    background: linear-gradient(to right, hsl(13, 100%, 72%),hsl(353, 100%, 62%));
+                    color:  $white-color;
+                    background: linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
                     font-size: 16px;
                     font-weight: bolder;
                     padding: 10px 35px;
@@ -181,61 +176,47 @@
             }
 
             .nav-item {
-                
                 color: hsl(208, 49%, 24%);
                 font-size: 16px;
                 font-weight: bold;
-                // padding: 0px 15px;
                 margin: 20px 0px;
                 cursor: pointer;
+
                 .nav-icon {
                     padding: 0px 10px;
-        
                 }
             }
         }
 
         .detail-wrapper {
             margin: 100px 0px;
-    
+
             h1 {
                 font-size: 40px;
-                color: white;
+                color:  $white-color;
                 margin-bottom: 30px;
             }
-    
+
             p {
-                font-size: 16px;
+                font-size: 20px;
                 color: hsl(12deg 100% 90%);
                 margin-bottom: 20px;
             }
 
-            .btn-wrapper{
+            .btn-wrapper {
                 display: flex;
             }
-    
+
             .free-btn {
-                color: hsl(347deg 66% 60%);
-                font-size: 16px;
                 padding: 10px 25px;
-                
+                white-space: nowrap;
             }
-    
+
             .learn-btn {
-                font-size: 16px;
                 padding: 10px 25px;
-            }
-    
-            .learn-btn:hover {
-                color: hsl(360deg 96% 70%);
-                background-color: white;
-    
+                white-space: nowrap;
             }
         }
 
-
-}
-
-
-   
+    }
 }
