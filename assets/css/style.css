@@ -196,9 +196,10 @@ body {
     top: 14%;
     left: 10%;
     right: 10%;
+    bottom: 10%;
     display: block;
     background-color: hsl(0deg, 0%, 100%);
-    padding: 20px;
+    padding: 30px;
   }
   .wrapper .nav-mobile .left-header {
     display: flex;
