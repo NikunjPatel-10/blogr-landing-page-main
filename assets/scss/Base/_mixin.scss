@@ -1,0 +1,20 @@
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin img-size {
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+}
+
+@mixin text-center{
+    h3{
+        text-align: center;
+    }
+    p{
+        text-align: center;
+    }
+}

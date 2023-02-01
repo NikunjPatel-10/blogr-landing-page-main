@@ -1,10 +1,9 @@
 .footer-wrapper {
-    margin-top: 150px;
     background-color: hsl(232deg 10% 16%);
     padding: 50px 150px;
-    border-top-right-radius: 100px;
+    border-top-right-radius: $border-radius;
     h3 {
-        color: white;
+        color:$white-color;
         font-size: 40px;
     }
 
@@ -20,12 +19,12 @@
             
             li {
                 margin: 15px 0px;
-                color: hsl(0, 0%, 100%);
+                color: $white-color;
                 opacity: 50%;
             }
 
             li:first-child {
-                color: hsl(0, 0%, 100%);
+                color: $white-color;
                 margin-bottom: 40px;
                 opacity: 100%;
             }
@@ -36,13 +35,11 @@
 
 }
 
-@media(max-width:375px){
+@media(max-width:425px){
     .footer-wrapper{
-        display: flex;
+        @include flex-center;
         flex-direction: column;
         margin: 0;
-        justify-content: center;
-        align-items: center;
 
         .nav-wrapper{
             margin: 0;
