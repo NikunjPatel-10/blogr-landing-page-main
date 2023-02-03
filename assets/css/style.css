@@ -79,7 +79,7 @@ body {
 
 .wrapper {
   padding: 30px 70px;
-  background: url(./../../../images/bg-pattern-intro-desktop.svg);
+  background: url(./../../images/bg-pattern-intro-desktop.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -122,17 +122,17 @@ body {
   cursor: pointer;
 }
 .wrapper .detail-wrapper {
-  margin: 100px 0px;
+  margin: 50px 0px;
 }
 .wrapper .detail-wrapper h1 {
   font-size: 60px;
   color: white;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 .wrapper .detail-wrapper p {
   font-size: 25px;
   color: hsl(12deg, 100%, 90%);
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 .wrapper .detail-wrapper .free-btn {
   color: hsl(347deg, 66%, 60%);
@@ -178,7 +178,7 @@ body {
     position: relative;
   }
   .wrapper {
-    background: url(/images/bg-pattern-intro-mobile.svg);
+    background: url(./../../images/bg-pattern-intro-mobile.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -196,7 +196,6 @@ body {
     top: 14%;
     left: 10%;
     right: 10%;
-    bottom: 10%;
     display: block;
     background-color: hsl(0deg, 0%, 100%);
     padding: 30px;
@@ -258,7 +257,7 @@ body {
   }
 }
 .section-wrapper {
-  margin-top: 100px;
+  margin-top: 50px;
 }
 .section-wrapper .sub-heading-text {
   text-align: center;

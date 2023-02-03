@@ -57,18 +57,18 @@
     }
 
     .detail-wrapper {
-        margin: 100px 0px;
+        margin: 50px 0px;
 
         h1 {
             font-size: 60px;
             color: white;
-            margin-bottom: 30px;
+            margin-bottom: 15px;
         }
 
         p {
             font-size: 25px;
             color: hsl(12deg 100% 90%);
-            margin-bottom: 40px;
+            margin-bottom: 30px;
         }
 
         .free-btn {
@@ -143,7 +143,7 @@
             top: 14%;
             left: 10%;
             right: 10%;
-            bottom: 10%;
+           
             display: block;
             background-color: $white-color;
             padding: 30px;
